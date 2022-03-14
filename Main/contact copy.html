@@ -135,8 +135,9 @@
                     <div class="col-lg-12">
                         <div class="formArea">
                             <div class="row">
+                                <body>
                                 <div class="col-lg-7 col-md-7">
-                                    <form onsubmit="sendEmail(); reset(); return false" method="post" class="contactFrom row" id="contactForm">
+                                    <form onsubmit="sendEmail(); reset(); return false;" method="post" class="contactFrom row" id="contactForm">
                                         <div class="col-md-6">
                                             <input class="required" type="text"  name="f_name" id="f_name" placeholder="First Name" required>
                                         </div>
@@ -160,6 +161,7 @@
                                         </div>
                                     </form>
                                 </div>
+                            </body>
                                 <div class="col-lg-5 col-md-5 noPaddingLeft">
                                     <div class="gmap" id="gmap">300 S Orange Ave, Orlando, FL 32801</div>
                                 </div>
@@ -172,12 +174,12 @@
             <script>
                 function sendEmail(){
                     Email.send({
-    Host : "smtp25.elasticemail.com",
-    Username : "verachang123@gmail.com",
-    Password : "6740DEED0305B788268E8E901E1FC08248F8",
+    Host : "smtp.yourisp.com",
+    Username : "username",
+    Password : "password",
     To : 'constancekang@bananacp.com',
-    From : document.getElementById("email").value,
-    Subject : "Contact Us New Inquiry",
+    From : "you@isp.com",
+    Subject : "This is the subject",
     Body : "And this is the body"
 }).then(
   message => alert(message)

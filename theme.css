@@ -2601,7 +2601,7 @@
     -webkit-transition: all ease 400ms;
     -moz-transition: all ease 400ms;
 }
-.singleProcess_3 .flipper { 
+.singleProcess_3 .flipper {
     -webkit-transition: 0.6s;
     -webkit-transform-style: preserve-3d;
     -ms-transition: 0.6s;
@@ -2904,7 +2904,7 @@
     font-weight: 900;
 }
 
-.footer_2 .subscribe_widgets input[type="text"], 
+.footer_2 .subscribe_widgets input[type="text"],
 .footer_2 .subscribe_widgets input[type="email"]{
     color: #606378;
     height: 60px;
